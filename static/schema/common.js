@@ -44,7 +44,7 @@ function parseMenuXML(xmlDoc) {
 }
 
 // XMLファイルを指定して読み込み
-loadMenuXML("https://https://github.com/xxxxxxxx/jdcat/static/schema/menu.xml");
+loadMenuXML("https://rcosdp.github.io/JDCat-schema/static/schema/menu.xml");
 
 document.querySelector('#schemaMenuTitle a').addEventListener('click', function(e){
 	e.preventDefault();
