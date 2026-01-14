@@ -9,23 +9,102 @@ body {
 }
 
 #mainCts {
+	width: 100%;
 	color: #333;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1.0rem;
 }
 
-.container {
+#mainCts object,
+#mainCts iframe,
+#mainCts h1,
+#mainCts h2,
+#mainCts h3,
+#mainCts h4,
+#mainCts h5,
+#mainCts h6,
+#mainCts p,
+#mainCts blockquote,
+#mainCts pre,
+#mainCts abbr,
+#mainCts address,
+#mainCts cite,
+#mainCts code,
+#mainCts del,
+#mainCts dfn,
+#mainCts em,
+#mainCts img,
+#mainCts ins,
+#mainCts kbd,
+#mainCts q,
+#mainCts samp,
+#mainCts small,
+#mainCts strong,
+#mainCts sub,
+#mainCts sup,
+#mainCts var,
+#mainCts b,
+#mainCts i,
+#mainCts dl,
+#mainCts dt,
+#mainCts dd,
+#mainCts ol,
+#mainCts ul,
+#mainCts li,
+#mainCts fieldset,
+#mainCts form,
+#mainCts label,
+#mainCts legend,
+#mainCts table,
+#mainCts caption,
+#mainCts tbody,
+#mainCts tfoot,
+#mainCts thead,
+#mainCts article,
+#mainCts aside,
+#mainCts dialog,
+#mainCts figure,
+#mainCts footer,
+#mainCts #hd,
+#mainCts hgroup,
+#mainCts menu,
+#mainCts nav,
+#mainCts section,
+#mainCts time,
+#mainCts mark,
+#mainCts audio,
+#mainCts video {
+	margin: 0px;
+	padding: 0px;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+#mainCts ul,
+#mainCts ol,
+#mainCts li {
+	list-style: none;
+}
+
+#mainCts a:hover {
+	text-decoration: none;
+}
+
+#mainCts .container {
 	margin: 0 auto;
 	padding: 0 60px;
+	width: auto !important;
 	z-index: 20;
 	position: relative;
 	text-align: left;
 }
 
 @media screen and (max-width: 1024px) {
-	.container {
+	#mainCts .container {
 		padding: 0 16px;
-		width: auto;
 		max-width: auto;
 	}
 }
@@ -72,23 +151,23 @@ body {
 
 /*----- schema -----*/
 
-#schemaCts {
+#mainCts #schemaCts {
 	padding: 40px 0 60px;
 	display: flex;
 }
 
-#schemaSide {
+#mainCts #schemaSide {
 	margin: 0 70px 0 0;
 	width: 280px;
 }
 
-#schemaMenuTitle {
+#mainCts #schemaMenuTitle {
 	font-size: 2rem;
 	font-weight: bold;
 	line-height: 1.2;
 }
 
-#schemaMenuTitle a {
+#mainCts #schemaMenuTitle a {
 	padding: 12px 12px;
 	background: #485173;
 	color: #fff;
@@ -97,46 +176,54 @@ body {
 	pointer-events: none;
 }
 
-#schemaMenuList ul li {
+#mainCts #schemaMenuList ul,
+#mainCts #schemaMenuList ol,
+#mainCts #schemaMenuList li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#mainCts #schemaMenuList ul li {
 	font-size: 1.8rem;
 	font-weight: 500;
 	line-height: 2.4rem;
 }
 
-#schemaMenuList ul li:not(:first-of-type) {
+#mainCts #schemaMenuList ul li:not(:first-of-type) {
 	border-top: 1px #c7c7c7 solid;
 }
 
-#schemaMenuList ul li a {
+#mainCts #schemaMenuList ul li a {
 	padding: 15px 20px;
 	background: #f5f5f5;
 	color: #333;
 	display: block;
 }
 
-#schemaMenuList ul li.set a,
-#schemaMenuList ul li a:hover {
+#mainCts #schemaMenuList ul li.set a,
+#mainCts #schemaMenuList ul li a:hover {
 	background: #fff;
 	color: #851D1D;
 }
 
 @media screen and (max-width: 767px) {
 
-	#schemaCts {
+	#mainCts #schemaCts {
 		padding: 40px 0 30px;
 		display: block;
 	}
 
-	#schemaSide {
+	#mainCts #schemaSide {
 		margin: 0 0 36px;
 		width: 100%;
 	}
 
-	#schemaMenuTitle a {
+	#mainCts #schemaMenuTitle a {
 		pointer-events: inherit;
 	}
 
-	#schemaMenuTitle a::after {
+	#mainCts #schemaMenuTitle a::after {
 		content: " ";
 		width: 0;
 		height: 0;
@@ -149,62 +236,61 @@ body {
 		position: absolute;
 	}
 
-	#schemaMenuList {
+	#mainCts #schemaMenuList {
 		display: none;
 	}
 	
-	#schemaMenu.open #schemaMenuTitle a::after {
+	#mainCts #schemaMenu.open #mainCts #schemaMenuTitle a::after {
 		transform:rotate(180deg);
 		transform-origin:center center;
 	}
 	
-	#schemaMenu.open #schemaMenuList {
+	#mainCts #schemaMenu.open #mainCts #schemaMenuList {
 		display: block;
 	}
 	
-	#schemaMenuList ul li {
+	#mainCts #schemaMenuList ul li {
 		font-size: 1.8rem;
 		font-weight: 500;
 		line-height: 2.4rem;
 	}
 
-	#schemaMenuList ul li:not(:first-of-type) {
+	#mainCts #schemaMenuList ul li:not(:first-of-type) {
 		border-top: 1px #c7c7c7 solid;
 	}
 
-	#schemaMenuList ul li a {
+	#mainCts #schemaMenuList ul li a {
 		padding: 15px 20px;
 		background: #f5f5f5;
 		color: #333;
 		display: block;
 	}
 
-	#schemaMenuList ul li.set a,
-	#schemaMenuList ul li a:hover {
+	#mainCts #schemaMenuList ul li.set a,
+	#mainCts #schemaMenuList ul li a:hover {
 		background: #fff;
 		color: #851D1D;
 	}
 
 }
 
-
-#schemaMain {
+#mainCts #schemaMain {
 	width: calc(100% - 350px);
 	font-size: 1.6rem;
 	font-weight: normal;
 	line-height: 1.75;
 }
 
-#schemaMain a {
+#mainCts #schemaMain a {
 	color: #851D1D;
 	text-decoration: underline;
 }
 
-#schemaMain a:hover {
+#mainCts #schemaMain a:hover {
 	text-decoration: none;
 }
 
-#schemaMain h1 {
+#mainCts #schemaMain h1 {
 	padding-bottom: 20px;
 	color: #364377;
 	font-size: 3rem;
@@ -213,8 +299,8 @@ body {
 	position: relative;
 }
 
-#schemaMain h1::before,
-#schemaMain h1::after {
+#mainCts #schemaMain h1::before,
+#mainCts #schemaMain h1::after {
 	content: " ";
 	width: 100%;
 	height: 0;
@@ -225,36 +311,36 @@ body {
 	position: absolute;
 }
 
-#schemaMain h1::before {
+#mainCts #schemaMain h1::before {
 	border-top-width: 3px;
 	bottom: 5px;
 }
 
-#schemaMain h1::after {
+#mainCts #schemaMain h1::after {
 	border-top-width: 1px;
 	bottom: 0;
 }
 
-#schemaMain section {
+#mainCts #schemaMain section {
 	margin-top: 40px;
 	padding: 0 0 32px 40px;
 	border-bottom: 2px #B9B9B9 dotted;
 	word-break: break-all;
 }
 
-#schemaMain section:last-of-type {
+#mainCts #schemaMain section:last-of-type {
 	border-bottom: none;
 }
 
-#schemaMain .attribute {
+#mainCts #schemaMain .attribute {
 	padding-left: 20px;
 }
 
-#schemaMain .above {
+#mainCts #schemaMain .above {
 	padding-left: 20px;
 }
 
-#schemaMain h2 {
+#mainCts #schemaMain h2 {
 	margin: 0 0 24px -40px;
 	padding: 3px 0 4px 46px;
 	color: #364377;
@@ -263,31 +349,31 @@ body {
 	line-height: 3.2rem;
 }
 
-#schemaMain #item h2 {
+#mainCts #schemaMain #item h2 {
 	background: url("img/icon01.svg") no-repeat 0 1px / 36px auto;
 }
 
-#schemaMain #description h2 {
+#mainCts #schemaMain #description h2 {
 	background: url("img/icon02.svg") no-repeat 0 1px / 36px auto;
 }
 
-#schemaMain #caution h2 {
+#mainCts #schemaMain #caution h2 {
 	background: url("img/icon03.svg") no-repeat 0 0 / 36px auto;
 }
 
-#schemaMain #recommend h2 {
+#mainCts #schemaMain #recommend h2 {
 	background: url("img/icon04.png") no-repeat 0 0 / 38px auto;
 }
 
-#schemaMain #deprecate h2 {
+#mainCts #schemaMain #deprecate h2 {
 	background: url("img/icon05.svg") no-repeat 0 0 / 37px auto;
 }
 
-#schemaMain #mapping h2 {
+#mainCts #schemaMain #mapping h2 {
 	background: url("img/icon06.svg") no-repeat 0 1px / 36px auto;
 }
 
-#schemaMain h3 {
+#mainCts #schemaMain h3 {
 	margin: 4px 0 16px;
 	color: #364377;
 	font-size: 2.2rem;
@@ -296,7 +382,7 @@ body {
 	position: relative;
 }
 
-#schemaMain h3::before {
+#mainCts #schemaMain h3::before {
 	content: " ";
 	width: 8px;
 	height: 8px;
@@ -308,7 +394,7 @@ body {
 	position: absolute;
 }
 
-#schemaMain h4 {
+#mainCts #schemaMain h4 {
 	margin: 12px 0 17px;
 	padding: 0 0 0 30px;
 	background: url("img/icon_above.svg") no-repeat 0 0 / 24px auto;
@@ -318,7 +404,7 @@ body {
 	line-height: 2.4rem;
 }
 
-#schemaMain .border {
+#mainCts #schemaMain .border {
 	margin: 0 0 12px;
 	padding: 10px 16px;
 	border: 1px #000 solid;
@@ -326,34 +412,34 @@ body {
 	display: inline-block;
 }
 
-#schemaMain .border:not(:first-of-type) {
+#mainCts #schemaMain .border:not(:first-of-type) {
 	margin-top: 16px;
 }
 
-#schemaMain .list .border {
+#mainCts #schemaMain .list .border {
 	margin-top: 12px;
 }
 
-#schemaMain .label,
-#schemaMain .repeat {
+#mainCts #schemaMain .label,
+#mainCts #schemaMain .repeat {
 	flex-wrap: wrap;
 	display: flex;
 }
 
-#schemaMain .label dt,
-#schemaMain .repeat dt {
+#mainCts #schemaMain .label dt,
+#mainCts #schemaMain .repeat dt {
 	margin-right: 0.5em;
 }
 
-#schemaMain .above > div,
-#schemaMain .list > ul > li {
+#mainCts #schemaMain .above > div,
+#mainCts #schemaMain .list > ul > li {
 	margin: 8px 0 0;
 	padding: 0 0 0 14px;
 	position: relative;
 }
 
-#schemaMain .above > div::before,
-#schemaMain .list > ul > li::before {
+#mainCts #schemaMain .above > div::before,
+#mainCts #schemaMain .list > ul > li::before {
 	content: " ";
 	width: 8px;
 	height: 8px;
@@ -365,33 +451,33 @@ body {
 	position: absolute;
 }
 
-#schemaMain .option {
+#mainCts #schemaMain .option {
 	margin: 8px 0;
 	padding: 0 0 0 16px;
 
 }
 
-#schemaMain .note {
+#mainCts #schemaMain .note {
 	padding: 0 0 0 4px;
 
 }
 
-#schemaMain .option li,
-#schemaMain .note li {
+#mainCts #schemaMain .option li,
+#mainCts #schemaMain .note li {
 	padding: 0 0 0 14px;
 	position: relative;
 }
 
-#schemaMain .option li {
+#mainCts #schemaMain .option li {
 	margin: 0 0 0;
 }
 
-#schemaMain .note li {
+#mainCts #schemaMain .note li {
 	margin: 8px 0 0;
 }
 
-#schemaMain .option li::before,
-#schemaMain .note li::before {
+#mainCts #schemaMain .option li::before,
+#mainCts #schemaMain .note li::before {
 	content: " ";
 	width: 6px;
 	height: 6px;
@@ -403,26 +489,26 @@ body {
 	position: absolute;
 }
 
-#schemaMain .above > div dt,
-#schemaMain .above > div dd {
+#mainCts #schemaMain .above > div dt,
+#mainCts #schemaMain .above > div dd {
 	display: inline-block;
 }
 
-#schemaMain .above > div dt::after {
+#mainCts #schemaMain .above > div dt::after {
 	content: "-";
 	margin: 0 0.5em;
 	display: inline-block;
 }
 
-#schemaMain .codebox {
+#mainCts #schemaMain .codebox {
 	margin-top: 16px;
 }
 
-#schemaMain section .codebox:not(:last-of-type) {
+#mainCts #schemaMain section .codebox:not(:last-of-type) {
 	margin-bottom: 24px;
 }
 
-#schemaMain .codebox pre {
+#mainCts #schemaMain .codebox pre {
 	padding: 20px;
 	background: #F5F5F5;
 	font-size: 1.4rem;
@@ -432,78 +518,78 @@ body {
 	overflow: auto;
 }
 
-#schemaMain .codebox pre code {
+#mainCts #schemaMain .codebox pre code {
 	overflow-x: auto;
 }
 
-#schemaMain.schemaTop h2 {
+#mainCts #schemaMain.schemaTop h2 {
 	padding-left: 0;
 	background: none !important;
 }
 
-#schemaMain.schemaTop h2 {
+#mainCts #schemaMain.schemaTop h2 {
 	padding-left: 0;
 	background: none !important;
 }
 
-#schemaMain.schemaTop section:first-of-type {
+#mainCts #schemaMain.schemaTop section:first-of-type {
 	margin-top: 0;
 }
 
-#schemaMain em {
+#mainCts #schemaMain em {
 	font-style: italic;
 }
 
 @media screen and (max-width: 767px) {
 
-	#schemaMain {
+	#mainCts #schemaMain {
 		width: 100%;
 		font-size: 1.6rem;
 		font-weight: normal;
 		line-height: 1.75;
 	}
 
-	#schemaMain h1 {
+	#mainCts #schemaMain h1 {
 		font-size: 2.4rem;
 		line-height: 3.6rem;
 	}
 
-	#schemaMain h2 {
+	#mainCts #schemaMain h2 {
 		padding: 2px 0 2px 40px;
 		font-size: 2.2rem;
 		line-height: 3rem;
 	}
 
-	#schemaMain #item h2 {
+	#mainCts #schemaMain #item h2 {
 		background: url("img/icon01_sp.svg") no-repeat 0 2px / 30px auto;
 	}
 
-	#schemaMain #description h2 {
+	#mainCts #schemaMain #description h2 {
 		background: url("img/icon02_sp.svg") no-repeat 0 2px / 30px auto;
 	}
 
-	#schemaMain #caution h2 {
+	#mainCts #schemaMain #caution h2 {
 		background: url("img/icon03_sp.svg") no-repeat 0 -2px / 36px auto;
 	}
 
-	#schemaMain #recommend h2 {
+	#mainCts #schemaMain #recommend h2 {
 		background: url("img/icon04_sp.png") no-repeat 0 2px / 30px auto;
 	}
 
-	#schemaMain #deprecate h2 {
+	#mainCts #schemaMain #deprecate h2 {
 		background: url("img/icon05_sp.svg") no-repeat 0 0 / 32px auto;
 	}
 
-	#schemaMain #mapping h2 {
+	#mainCts #schemaMain #mapping h2 {
 		background: url("img/icon06_sp.svg") no-repeat 0 2px / 30px auto;
 	}
 
-	#schemaMain h3 {
+	#mainCts #schemaMain h3 {
 		font-size: 2rem;
 		line-height: 3rem;
 	}
 
-	#schemaMain h3::before {
+	#mainCts #schemaMain h3::before {
 		top: 10px;
 	}
 

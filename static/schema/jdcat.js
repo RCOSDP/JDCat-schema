@@ -146,3 +146,8 @@ function tagMake(targetItem) {
 }
 
 loadXML();
+
+document.querySelector('#schemaMenuTitle a').addEventListener('click', function(e){
+	e.preventDefault();
+	document.querySelector('#schemaMenu').classList.toggle('open');
+});
