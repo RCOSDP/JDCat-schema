@@ -240,12 +240,12 @@ body {
 		display: none;
 	}
 	
-	#mainCts #schemaMenu.open #mainCts #schemaMenuTitle a::after {
+	#mainCts #schemaMenu.open #schemaMenuTitle a::after {
 		transform:rotate(180deg);
 		transform-origin:center center;
 	}
 	
-	#mainCts #schemaMenu.open #mainCts #schemaMenuList {
+	#mainCts #schemaMenu.open #schemaMenuList {
 		display: block;
 	}
 	
