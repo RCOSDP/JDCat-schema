@@ -40,7 +40,7 @@ function parseXML(xmlDoc) {
 						title = '<h2>Unrecommended Examples</h2>';
 						break;
 					case 'mapping':
-						title = '<h2>junii2 mapping</h2>';
+						title = '<h2>JPCOAR mapping</h2>';
 						break;
 				}
 				section_element.innerHTML = title;
@@ -151,3 +151,4 @@ document.querySelector('#schemaMenuTitle a').addEventListener('click', function(
 	e.preventDefault();
 	document.querySelector('#schemaMenu').classList.toggle('open');
 });
+
