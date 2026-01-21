@@ -43,7 +43,7 @@
 			<li>vacabを省略しない</li>
 		</list>
 		<codebox>&lt;topcClas xml:lang="ja"&gt;雇用&lt;/topcClas&gt;
-&lt;topcClas vocab="CESSDATopic" vocabURI="https://vocabularies.cessda.eu/urn/urn:ddi:int.cessda.cv:TopicClassification" xml:lang="ja"&gt;労働条件&lt;/topcClas&gt;</codebox>
+&lt;topcClas xml:lang="ja"&gt;労働条件&lt;/topcClas&gt;</codebox>
 	</category>
 	<category name="mapping">
 		<list>
@@ -51,3 +51,4 @@
 		</list>
 	</category>
 </schema>
+
