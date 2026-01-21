@@ -40,7 +40,7 @@ function parseXML(xmlDoc) {
 						title = '<h2>非推奨例</h2>';
 						break;
 					case 'mapping':
-						title = '<h2>junii2からのマッピング</h2>';
+						title = '<h2>JPCOARへのマッピング</h2>';
 						break;
 				}
 				section_element.innerHTML = title;
@@ -151,3 +151,4 @@ document.querySelector('#schemaMenuTitle a').addEventListener('click', function(
 	e.preventDefault();
 	document.querySelector('#schemaMenu').classList.toggle('open');
 });
+
